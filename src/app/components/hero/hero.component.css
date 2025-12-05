@@ -1,0 +1,69 @@
+.hero {
+  width: 100%;
+  padding: 3rem 2rem; /* Reduced from 6rem to 3rem for less height */
+  background: linear-gradient(135deg, #e7e9ff 0%, #ffffff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* Slightly smaller gap */
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-image .avatar {
+  width: 150px;  /* Reduced from 200px */
+  height: 150px; /* Reduced from 200px */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3f51b5;
+}
+
+.hero-title {
+  font-size: 2.4rem; /* Slightly smaller */
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.4rem; /* Slightly smaller */
+  margin-bottom: 1rem;
+}
+
+.hero-tagline {
+  font-size: 1rem; /* Slightly smaller */
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem; /* Smaller gap between buttons */
+}
+
+.hero-buttons .btn {
+  padding: 0.6rem 1.2rem; /* Slightly smaller buttons */
+}
+
+.hero-social-links a {
+  margin-right: 0.8rem; /* Slightly smaller spacing */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}
